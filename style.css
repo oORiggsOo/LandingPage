@@ -1,0 +1,164 @@
+body {
+    background: rgba(20, 25, 41, 0.9);
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.showcase::before{
+    content:'';
+    height: 95vh;
+    width: 100%;
+    background-image: url("img/black-and-white-cold-fog-235621.jpg");
+    /*https://source.unsplash.com/1600x900/?winter*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: all 1000ms;
+}
+
+.showcase:hover::before {
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+}
+
+.showcase:hover .content {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.content {
+    position: absolute;
+    z-index:1;
+    top: 30%;
+    left: 50%;
+    /*margin-top: 0px;*/
+    margin-left: -145px;
+    width: 300px;
+    height:350px;
+    text-align: center;
+    transition: all 1000ms;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+}
+
+.logos {
+    height: 22px;
+    width: 22px;
+}
+.logo-footer {
+    height: 15px;
+    width: 15px;
+}
+
+.logosb {
+    height: 75px;
+    width: 75px;
+}
+
+.content .logo {
+    height: 180px;
+    width:180px;
+}
+
+.content .title{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.content .text {
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-gap:  20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-2 {
+    display: grid;
+    grid-gap:  20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.bg-light {
+    background: #c2cad0;
+    color: #333333;
+}
+.bg-dark {
+    color: #c2cad0;
+}
+
+footer {
+    padding: 2.2rem;
+}
+
+footer p {
+    margin:0;
+}
+
+
+/*Small Screens*/
+@media(max-width: 360px) {
+
+    .showcase::after {
+        height: 50vh;
+    }
+
+    .content {
+        top: 10%;
+        margin-top:5px;
+    }
+
+    .content .logo {
+        height: 140px;
+        width: 140px;
+    }
+
+    /*.content .text {*/
+        /*display: none;*/
+    /*}*/
+
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .services div {
+        border-bottom: #333333;
+        padding: 1.2rem 1rem;
+    }
+}
+
+/*Landscape*/
+
+@media(max-height: 500px) {
+    .content .title,
+    .content .text {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
