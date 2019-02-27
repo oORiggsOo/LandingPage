@@ -9,6 +9,7 @@ body {
     content:'';
     height: 95vh;
     width: 100%;
+
     background-image: url("img/black-and-white-cold-fog-235621.jpg");
     /*https://source.unsplash.com/1600x900/?winter*/
     -webkit-background-size: cover;
