@@ -5,11 +5,10 @@ body {
     font-family: 'Droid Serif', sans-serif;
 }
 
-.showcase::before{
-    content:'';
+.showcase::before {
+    content: '';
     height: 95vh;
     width: 100%;
-
     background-image: url("../img/black-and-white-cold-fog-235621.jpg");
     /*https://source.unsplash.com/1600x900/?winter*/
     -webkit-background-size: cover;
@@ -31,15 +30,16 @@ body {
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
+
 .content {
     position: absolute;
-    z-index:1;
+    z-index: 1;
     top: 30%;
     left: 50%;
     /*margin-top: 0px;*/
     margin-left: -145px;
     width: 300px;
-    height:350px;
+    height: 350px;
     text-align: center;
     transition: all 1000ms;
     filter: blur(50px);
@@ -48,7 +48,7 @@ body {
 
 .downRem {
     margin: auto auto;
-    padding: 2px;
+    padding: 0px;
 
 }
 
@@ -56,6 +56,7 @@ body {
     height: 22px;
     width: 22px;
 }
+
 .logo-footer {
     height: 15px;
     width: 15px;
@@ -68,10 +69,10 @@ body {
 
 .content .logo {
     height: 180px;
-    width:180px;
+    width: 180px;
 }
 
-.content .title{
+.content .title {
     font-size: 2.2rem;
     margin-top: 1rem;
 }
@@ -90,12 +91,13 @@ body {
 
 .grid-3 {
     display: grid;
-    grid-gap:  20px;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .grid-2 {
     display: grid;
-    grid-gap:  20px;
+    grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -108,6 +110,7 @@ body {
     background: #c2cad0;
     color: #333333;
 }
+
 .bg-dark {
     color: #c2cad0;
 }
@@ -117,54 +120,21 @@ footer {
 }
 
 footer p {
-    margin:0;
+    margin: 0;
 }
 
 
 /*Small Screens*/
-@media(max-width: 360px) {
-
-    .showcase::After {
-        height: 50vh;
-        content: '';
-        height: 95vh;
-        width: 100%;
-        background-image: url("../img/black-and-white-cold-fog-235621.jpg");
-        /*https://source.unsplash.com/1600x900/?winter*/
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: block;
-        filter: blur(50px);
-        -webkit-filter: blur(50px);
-        transition: all 1000ms;
-    }
-
-    .showcase:hover::after {
-        filter: blur(0px);
-        -webkit-filter: blur(0px);
-    }
-
-    .showcase:hover .content {
-        filter: blur(50px);
-        -webkit-filter: blur(50px);
-    }
-
-
+@media (max-width: 360px) {
     .content {
         top: 10%;
-        margin-top:5px;
+        margin-top: 5px;
     }
 
     .content .logo {
         height: 140px;
         width: 140px;
     }
-
-    /*.content .text {*/
-        /*display: none;*/
-    /*}*/
 
     .grid-3,
     .grid-2 {
@@ -179,7 +149,7 @@ footer p {
 
 /*Landscape*/
 
-@media(max-height: 500px) {
+@media (max-height: 500px) {
     .content .title,
     .content .text {
         display: none;
