@@ -10,7 +10,7 @@ body {
     height: 95vh;
     width: 100%;
 
-    background-image: url("img/black-and-white-cold-fog-235621.jpg");
+    background-image: url("../img/black-and-white-cold-fog-235621.jpg");
     /*https://source.unsplash.com/1600x900/?winter*/
     -webkit-background-size: cover;
     background-size: cover;
@@ -30,6 +30,12 @@ body {
 .showcase:hover .content {
     filter: blur(0px);
     -webkit-filter: blur(0px);
+}
+
+.downRem {
+    margin: auto auto;
+    padding: 2px;
+
 }
 
 .content {
