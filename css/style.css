@@ -31,13 +31,6 @@ body {
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
-
-.downRem {
-    margin: auto auto;
-    padding: 2px;
-
-}
-
 .content {
     position: absolute;
     z-index:1;
@@ -51,6 +44,12 @@ body {
     transition: all 1000ms;
     filter: blur(50px);
     -webkit-filter: blur(50px);
+}
+
+.downRem {
+    margin: auto auto;
+    padding: 2px;
+
 }
 
 .logos {
@@ -125,9 +124,33 @@ footer p {
 /*Small Screens*/
 @media(max-width: 360px) {
 
-    .showcase::after {
+    .showcase::After {
         height: 50vh;
+        content: '';
+        height: 95vh;
+        width: 100%;
+        background-image: url("../img/black-and-white-cold-fog-235621.jpg");
+        /*https://source.unsplash.com/1600x900/?winter*/
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        filter: blur(50px);
+        -webkit-filter: blur(50px);
+        transition: all 1000ms;
     }
+
+    .showcase:hover::after {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+
+    .showcase:hover .content {
+        filter: blur(50px);
+        -webkit-filter: blur(50px);
+    }
+
 
     .content {
         top: 10%;
