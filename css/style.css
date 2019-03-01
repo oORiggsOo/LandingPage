@@ -48,7 +48,7 @@ body {
 
 .downRem {
     margin: auto auto;
-    padding: 0px;
+    padding: 5px;
 
 }
 
@@ -149,7 +149,7 @@ footer p {
 
 /*Landscape*/
 
-@media (max-height: 500px) {
+@media (max-height: 411px) {
     .content .title,
     .content .text {
         display: none;
