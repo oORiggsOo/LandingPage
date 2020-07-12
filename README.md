@@ -1,2 +1,2 @@
-Return To Code Portfolio Index
-[code portfolio](https://ooriggsoo.github.io/)
+Return To [code portfolio](https://ooriggsoo.github.io/) Index
+
