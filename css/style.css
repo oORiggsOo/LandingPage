@@ -22,8 +22,8 @@ body {
 
 .showcase:hover::before {
     transition: all 1000ms;
-    filter: blur(50px);
-    -webkit-filter: blur(50px);
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
 }
 
 
