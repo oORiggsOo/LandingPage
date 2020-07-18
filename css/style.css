@@ -7,7 +7,7 @@ body {
 
 .showcase::before {
     content: '';
-    height: 85vh;
+    height: 55vh;
     width: 100%;
     background-image: url("../img/black-and-white-cold-fog-235621.jpg");
     -webkit-background-size: cover;
@@ -17,18 +17,18 @@ body {
     display: block;
     filter: blur(0px);
     -webkit-filter: blur(0px);
-    transition: all 1000ms;
+    transition: all 550ms;
 }
 
 .showcase:hover::before {
-    transition: all 1000ms;
+    transition: all 550ms;
     filter: blur(100px);
     -webkit-filter: blur(100px);
 }
 
 
 .showcase:hover .content {
-    transition: all 1000ms;
+    transition: all 550ms;
     filter: blur(0px);
     -webkit-filter: blur(0px);
 
@@ -38,14 +38,15 @@ body {
 .content {
     position: absolute;
     z-index: 1;
-    top: 30%;
+    top:5%;
     left: 50%;
     margin-left: -148px;
     width: 300px;
     height: 350px;
     text-align: center;
-    filter: blur(50px);
-    -webkit-filter: blur(50px);
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
+    
 }
 
 .downRem {
@@ -136,7 +137,7 @@ footer p {
 /*Small Screens*/
 @media (max-width: 360px) {
     .content {
-        top: 10%;
+        top: 5%;
         margin-top: 5px;
     }
 
